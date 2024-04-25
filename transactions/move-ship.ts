@@ -22,11 +22,11 @@ async function moveShip(
   shipTxHash: TxHash
 ): Promise<TxHash> {
   const lucid = await lucidBase();
-  const seed = Deno.env.get("SEED");
+  const seed = "ed25519_sk1jf9ynqsaw4htg4cp8nkdlahqt8shjzqaan4jfnzzjs5lruq9fzmqdzzytj";
   if (!seed) {
     throw Error("Unable to read wallet's seed from env");
   }
-  lucid.selectWalletFromSeed(seed);
+  lucid.selectWalletFromPrivateKey(seed);
 
   const spacetimeRef = await fetchReferenceScript(lucid, spacetimeRefTxHash);
 

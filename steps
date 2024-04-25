@@ -1,0 +1,1 @@
+after running "deno run --allow-net --allow-read --allow-env hello-world.ts" in terminal you are presented with a txhash as a result, this is the new utxo that showcases the position of the shiipl

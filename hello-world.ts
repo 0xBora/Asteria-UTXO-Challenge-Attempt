@@ -19,10 +19,10 @@ const CHALLENGE_TOKEN: AssetClassT = {
 };
 
 // Ship parameters, these are defined by the participant when starting the challenge.
-const INITIAL_POS_X = -27n;
-const INITIAL_POS_Y = 23n;
+const INITIAL_POS_X = -35n;
+const INITIAL_POS_Y = -15n;
 
-// const txHash = await createShip(
+//const txHash = await createShip(
 //   ASTERIA_SCRIPT_INPUT,
 //   SPACETIME_SCRIPT_INPUT,
 //   CHALLENGE_TOKEN,
@@ -34,10 +34,10 @@ const INITIAL_POS_Y = 23n;
 
 // console.log(txHash);
 
-const delta_x = 2n;
-const delta_y = -3n;
+const delta_x = 5n;
+const delta_y = 0n;
 const shipTxHash =
-  "2f6319f702ef26e1213d39dba190f140b41ac57fdf71dc97f711e75052e97304";
+  "992de3792074eedce543a5590d997b54073273eb3b7918b2b74c9d312e742285";
 
 const txHash = await moveShip(
   SPACETIME_SCRIPT_INPUT,
